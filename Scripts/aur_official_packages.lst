@@ -15,10 +15,13 @@ noto-fonts-emoji
 noto-fonts-extra
 
 # Unnecessary packages
-code
+linux-zen
+linux-zen-headers
+zed
 firefox
 torbrowser-launcher
 steam
+obsidian
 qbittorrent
 prismlauncher
 nwg-look
@@ -32,9 +35,14 @@ fastfetch
 github-cli
 flatpak
 7zip
+cmatrix
 xdg-desktop-portal-hyprland
-openal
-flite
 cups
 cups-pdf
 gutenprint
+mangohud
+jdk8-openjdk
+jdk17-openjdk
+jdk21-openjdk
+openal
+flite

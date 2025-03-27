@@ -1,9 +1,9 @@
 {
     "autoUpdate": true,
     "autoUpdateNotification": true,
-    "useQuickCss": true,
+    "useQuickCss": false,
     "themeLinks": [
-        "https://raw.githubusercontent.com/ClearVision/ClearVision-v6/master/ClearVision_v6.theme.css"
+        "#https://raw.githubusercontent.com/ClearVision/ClearVision-v6/master/ClearVision_v6.theme.css"
     ],
     "enabledThemes": [],
     "enableReactDevtools": false,
@@ -726,7 +726,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1741681635300
+        "settingsSyncVersion": 1743105796896
     },
     "notifyAboutUpdates": true,
     "eagerPatches": false

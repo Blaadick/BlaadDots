@@ -1,0 +1,46 @@
+{
+    "ui_font_size": 14,
+    "buffer_font_size": 13,
+    "theme": {
+        "mode": "system",
+        "light": "One Light",
+        "dark": "JetBrains New Dark"
+    },
+    "icon_theme": "JetBrains New UI Icons (Dark)",
+    "base_keymap": "JetBrains",
+    "collaboration_panel": {
+        "button": false
+    },
+    "features": {
+        "edit_prediction_provider": "copilot"
+    },
+    "assistant": {
+        "version": "2",
+        "enabled": false,
+        "default_model": {
+            "provider": "zed.dev",
+            "model": "claude-3-5-sonnet-latest"
+        },
+        "editor_model": {
+            "provider": "zed.dev",
+            "model": "claude-3-5-sonnet-latest"
+        }
+    },
+    "autosave": "on_focus_change",
+    "prettier": {
+        "allowed": true,
+        "tabWidth": 4,
+        "bracketSpacing": true,
+        "singleQuote": false
+    },
+    "terminal": {
+        "shell": {
+            "program": "fish"
+        }
+    },
+    "telemetry": {
+        "metrics": false,
+        "diagnostics": false
+    },
+    "auto_update": false
+}

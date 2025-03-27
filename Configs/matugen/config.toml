@@ -7,7 +7,3 @@ output_path = "~/.config/kitty/colors.conf"
 [templates.eww]
 input_path = "./templates/eww-colors.scss"
 output_path = "~/.config/eww/colors.scss"
-
-[templates.vesktop]
-input_path = "./templates/vesktop-colors.css"
-output_path = "~/.config/vesktop/settings/quickCss.css"
