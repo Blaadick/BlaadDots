@@ -28,7 +28,6 @@
         "player",
         "media",
         "sound",
-        "wifi",
         "weather",
         "break",
         { "type": "colors", "symbol": "circle" }

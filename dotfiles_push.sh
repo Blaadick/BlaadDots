@@ -11,6 +11,7 @@ mkdir ./Configs/zed/
 cp -a ~/.config/eww/ ./Configs/
 cp -a ~/.config/fastfetch/ ./Configs/
 cp -a ~/.config/hypr/ ./Configs/
+rm ./Configs/hypr/hyprpaper.conf
 cp -a ~/.config/kitty/ ./Configs/
 cp -a ~/.config/nvim/ ./Configs/
 cp -a ~/.config/vesktop/settings ./Configs/vesktop/settings/
