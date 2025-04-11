@@ -25,7 +25,7 @@ case $1 in
 
         cp $randomWallpaper ~/Pictures/CurrentWallpaper.png
     ;;
-    
+
     set)
         if [[ -z $2 ]]; then
             echo "No file path was specified"

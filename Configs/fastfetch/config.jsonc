@@ -15,6 +15,7 @@
         "title",
         "break",
         "os",
+        "kernel",
         "uptime",
         "packages",
         {
@@ -28,7 +29,7 @@
         "media",
         "sound",
         "wifi",
-        //"weather",
+        "weather",
         "break",
         { "type": "colors", "symbol": "circle" }
     ]

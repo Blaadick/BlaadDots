@@ -14,7 +14,7 @@ if [ -z "$RESPONSE" ]; then
     exit
 fi
 
-TAGS=$(echo "$RESPONSE" | grep -oP '"tag_string_general":"\K[^"]+' | sed 's/ /, /g; s/_/ /g')
+TAGS=$(echo "$RESPONSE" | grep -Po '"tag_string_general":"\K[^"]+' | sed 's/ /, /g; s/_/ /g')
 
 echo $TAGS
 wl-copy $TAGS

@@ -1,26 +1,30 @@
-rm -rf ~/DotFiles/Configs/*
-rm -rf ~/DotFiles/Icons/*
-rm -rf ~/DotFiles/Scripts/*
+cd ~/DotFiles
 
-mkdir ~/DotFiles/Configs/vesktop/
-mkdir ~/DotFiles/Configs/fish/
-mkdir ~/DotFiles/Configs/zed/
+rm -rf ./Configs/*
+rm -rf ./Icons/*
+rm -rf ./Scripts/*
 
-cp -a ~/.config/eww/ ~/DotFiles/Configs/
-cp -a ~/.config/fastfetch/ ~/DotFiles/Configs/
-cp -a ~/.config/hypr/ ~/DotFiles/Configs/
-cp -a ~/.config/kitty/ ~/DotFiles/Configs/
-cp -a ~/.config/nvim/ ~/DotFiles/Configs/
-cp -a ~/.config/vesktop/settings ~/DotFiles/Configs/vesktop/settings/
-cp -a ~/.config/fish/config.fish ~/DotFiles/Configs/fish/
-cp -a ~/.config/fontconfig/ ~/DotFiles/Configs/
-cp -a ~/.config/matugen/ ~/DotFiles/Configs/
-cp -a ~/.config/hyprswitch.css ~/DotFiles/Configs/
-cp -a ~/.config/zed/settings.json ~/DotFiles/Configs/zed/
-cp -a ~/.config/blaadpapers.json ~/DotFiles/Configs/
+mkdir ./Configs/vesktop/
+mkdir ./Configs/fish/
+mkdir ./Configs/zed/
 
-cp -a ~/.icons/* ~/DotFiles/Icons/
-cp -a ~/Scripts/* ~/DotFiles/Scripts/
+cp -a ~/.config/eww/ ./Configs/
+cp -a ~/.config/fastfetch/ ./Configs/
+cp -a ~/.config/hypr/ ./Configs/
+cp -a ~/.config/kitty/ ./Configs/
+cp -a ~/.config/nvim/ ./Configs/
+cp -a ~/.config/vesktop/settings ./Configs/vesktop/settings/
+cp -a ~/.config/fish/config.fish ./Configs/fish/
+cp -a ~/.config/fontconfig/ ./Configs/
+cp -a ~/.config/matugen/ ./Configs/
+cp -a ~/.config/hyprswitch.css ./Configs/
+cp -a ~/.config/zed/settings.json ./Configs/zed/
+cp -a ~/.config/blaadpapers ./Configs/
+
+cp -a ~/.icons/* ./Icons/
+cp -a ~/Scripts/* ./Scripts/
+
+sudo cp /etc/pacman.conf ./ConfigsOther/pacman.conf
 
 if [[ -n $1 ]]; then
     git add *
