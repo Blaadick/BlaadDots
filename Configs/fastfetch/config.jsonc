@@ -3,8 +3,8 @@
     "logo": {
         "type": "kitty-direct",
         "source": "~/.config/fastfetch/logos/*.png",
-        "height": 15,
-        "width": 34,
+        // "height": 11,
+        "width": 22,
         "padding": {
             "top": 1,
             "right": 0
@@ -18,17 +18,9 @@
         "kernel",
         "uptime",
         "packages",
-        {
-            "type": "cpu",
-            "showPeCoreCount": false,
-            "temp": true
-        },
-        "gpu",
-        "datetime",
-        "player",
-        "media",
-        "sound",
-        "weather",
+        "disk",
+        "cpuusage",
+        // "publicip",
         "break",
         { "type": "colors", "symbol": "circle" }
     ]
