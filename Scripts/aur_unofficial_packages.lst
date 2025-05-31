@@ -1,6 +1,6 @@
 # Necessary packages
 eww
-hyprswitch
+hyprshell
 matugen-bin
 
 # Unnecessary packages
@@ -8,4 +8,4 @@ jetbrains-toolbox
 vesktop
 youtube-music-bin
 aseprite
-logmein-hamachi
+zerotier-one

@@ -3,20 +3,25 @@ hyprpaper
 hyprlock
 hypridle
 hyprpicker
+qt6ct
+kvantum
+nwg-look
 wl-clipboard
 grim
 slurp
 brightnessctl
 playerctl
+
+# Fonts
 ttf-jetbrains-mono
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
 noto-fonts-extra
 
+
+
 # Unnecessary packages
-linux-zen
-linux-zen-headers
 zed
 firefox
 torbrowser-launcher
@@ -24,7 +29,6 @@ steam
 obsidian
 qbittorrent
 prismlauncher
-nwg-look
 nautilus
 loupe
 blueman
@@ -35,12 +39,10 @@ fastfetch
 github-cli
 flatpak
 7zip
-cmatrix
 xdg-desktop-portal-hyprland
 cups
 cups-pdf
 gutenprint
-mangohud
 jdk8-openjdk
 jdk17-openjdk
 jdk21-openjdk

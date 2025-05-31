@@ -26,5 +26,10 @@ cd
 cd ~/.local/share
 git clone https://github.com/vinceliuice/Graphite-gtk-theme
 cd Graphite-gtk-theme
-./install.sh -d ~/.themes -c dark --tweaks black rimless normal -l
+./install.sh -d ~/.themes -c dark --tweaks rimless normal -l
+cd ..
+
+git clone https://github.com/vinceliuice/Graphite-kde-theme
+cd Graphite-kde-theme
+./install.sh -t default -c dark --rimless
 cd
