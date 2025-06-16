@@ -1,4 +1,4 @@
-cd ~/BlaadDots
+cd ~/Documents/BlaadDots
 
 git pull
 

@@ -1,4 +1,4 @@
-cd ~/BlaadDots
+cd ~/Documents/BlaadDots
 
 rm -rf ./Configs/*
 rm -rf ./Icons/*
