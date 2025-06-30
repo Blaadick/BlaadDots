@@ -1,10 +1,7 @@
 source ~/Documents/DotFiles/Scripts/install/install.sh
 
 arch_packages=(
-    #AOR
     zed
-    firefox
-    torbrowser-launcher
     steam
     obsidian
     qbittorrent
@@ -29,12 +26,13 @@ arch_packages=(
     openal
     flite
 
-    #AUR
-    jetbrains-toolbox
-    vesktop
+    zen-browser-bin
     youtube-music
+    vesktop
     aseprite
+    jetbrains-toolbox
     zerotier-one
+    mkinitcpio-firmware
 )
 flatpak_packages=(
     com.obsproject.Studio
@@ -42,8 +40,8 @@ flatpak_packages=(
     net.blockbench.Blockbench
 )
 
-install_pkgs ${arch_packages[@]}
-yay -Rnsu $(yay -Qqtd) --noconfirm
+install_pkgs "${arch_packages[@]}"
+yay -Rnsu "$(yay -Qqtd)" --noconfirm
 yay -Rns dolphin vim htop --noconfirm
 
-flatpak install ${flatpak_packages[@]}
+flatpak install "${flatpak_packages[@]}"

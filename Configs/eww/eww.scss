@@ -1,39 +1,40 @@
-@import "colors.scss";
+$background: #000000;
+$foreground: #ffffff;
 
 * {
     all: unset;
     border-radius: 10px;
     font-family: monospace;
-    color: $on_surface;
+    color: $foreground;
 }
 
 tooltip {
-    background-color: rgba($background, 0.8);
+    background-color: rgba($background, 0.3);
 }
 
 .circular-bar {
-    background-color: rgba($on_surface, 0.15);
+    background-color: rgba($foreground, 0.15);
 }
 
 .battery-charging {
-    color: $primary;
-    background-color: rgba($primary, 0.15);
+    color: $foreground;
+    background-color: rgba($foreground, 0.15);
 
     label {
-        color: $primary;
+        color: $foreground;
     }
 }
 
 .battery-low {
-    color: $error;
-    background-color: rgba($error, 0.15);
+    color: $foreground;
+    background-color: rgba($foreground, 0.15);
 
     label {
-        color: $error;
+        color: $foreground;
     }
 }
 
 .bar {
-    background-color: rgba($background, 0.499);
+    background-color: rgba($background, 0.3);
     padding: 0.4em;
 }

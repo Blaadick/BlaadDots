@@ -1,6 +1,12 @@
 {
+    "agent": {
+        "model_parameters": [],
+        "dock": "right",
+        "version": "2"
+    },
     "ui_font_size": 16,
     "buffer_font_size": 13,
+    "buffer_font_family": "JetBrains Mono",
     "theme": {
         "mode": "dark",
         "light": "One Light",
@@ -13,18 +19,6 @@
     },
     "features": {
         "edit_prediction_provider": "copilot"
-    },
-    "assistant": {
-        "version": "2",
-        "enabled": false,
-        "default_model": {
-            "provider": "zed.dev",
-            "model": "claude-3-5-sonnet-latest"
-        },
-        "editor_model": {
-            "provider": "zed.dev",
-            "model": "claude-3-5-sonnet-latest"
-        }
     },
     "autosave": "on_focus_change",
     "format_on_save": "off",

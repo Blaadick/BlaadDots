@@ -4,17 +4,17 @@ if [[ -z "$1" ]]; then
 fi
 
 if [[ "$1" =~ ^[1-9]+$ ]]; then
-    RESPONSE=$(curl -s "https://danbooru.donmai.us/posts/$1.json")
+    response=$(curl -s "https://danbooru.donmai.us/posts/$1.json")
 else
-    RESPONSE=$(curl -s "$1.json")
+    response=$(curl -s "$1.json")
 fi
 
-if [ -z "$RESPONSE" ]; then
+if [ -z "$response" ]; then
     echo "Error during API request"
     exit
 fi
 
-TAGS=$(echo "$RESPONSE" | grep -Po '"tag_string_general":"\K[^"]+' | sed 's/ /, /g; s/_/ /g')
+tags=$(echo "$response" | grep -Po '"tag_string_general":"\K[^"]+' | sed 's/ /, /g; s/_/ /g')
 
-echo $TAGS
-wl-copy $TAGS
+echo "$tags"
+wl-copy "$tags"

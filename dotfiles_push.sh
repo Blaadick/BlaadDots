@@ -16,7 +16,6 @@ cp -a ~/.config/nvim/ ./Configs/
 cp -a ~/.config/vesktop/settings ./Configs/vesktop/settings/
 cp -a ~/.config/fish/config.fish ./Configs/fish/
 cp -a ~/.config/fontconfig/ ./Configs/
-cp -a ~/.config/matugen/ ./Configs/
 cp -a ~/.config/zed/settings.json ./Configs/zed/
 cp -a ~/.config/blaadpapers/ ./Configs/
 cp -a ~/.icons/* ./Icons/

@@ -1,5 +1,4 @@
 main_packages=(
-    #AOR
     hyprlock
     hypridle
     hyprpicker
@@ -18,7 +17,6 @@ main_packages=(
     noto-fonts-emoji
     noto-fonts-extra
 
-    #AUR
     blaadpapers
     eww
     quickshell
@@ -27,7 +25,7 @@ main_packages=(
 )
 
 install_pkgs() {
-    yay -S $@ --noconfirm --answerclean A --answerdiff N --removemake
+    yay -S "$@" --noconfirm --answerclean A --answerdiff N --removemake
 }
 
 setup_yay() {
@@ -75,6 +73,6 @@ setup_dotfiles() {
 }
 
 setup_yay
-install_pkgs ${main_packages[@]}
+install_pkgs "${main_packages[@]}"
 setup_omf
 setup_themes

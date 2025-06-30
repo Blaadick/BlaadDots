@@ -1,9 +1,0 @@
-[config]
-
-[templates.kitty]
-input_path = "./templates/kitty-colors.conf"
-output_path = "~/.config/kitty/colors.conf"
-
-[templates.eww]
-input_path = "./templates/eww-colors.scss"
-output_path = "~/.config/eww/colors.scss"
