@@ -1,0 +1,8 @@
+{
+    "bad_tags": [
+        "Sensitive",
+        "Questionable",
+        "Explicit"
+    ],
+    "working_dir": "~/Pictures/Wallpapers"
+}

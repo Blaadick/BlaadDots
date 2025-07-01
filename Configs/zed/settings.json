@@ -1,0 +1,42 @@
+{
+    "agent": {
+        "model_parameters": [],
+        "dock": "right",
+        "version": "2"
+    },
+    "ui_font_size": 16,
+    "buffer_font_size": 13,
+    "buffer_font_family": "JetBrains Mono",
+    "theme": {
+        "mode": "dark",
+        "light": "One Light",
+        "dark": "JetBrains New Dark"
+    },
+    "icon_theme": "JetBrains New UI Icons (Dark)",
+    "base_keymap": "JetBrains",
+    "collaboration_panel": {
+        "button": false
+    },
+    "features": {
+        "edit_prediction_provider": "copilot"
+    },
+    "autosave": "on_focus_change",
+    "format_on_save": "off",
+    "tab_size": 4,
+    "prettier": {
+        "allowed": true,
+        "tabWidth": 4,
+        "bracketSpacing": true,
+        "singleQuote": false
+    },
+    "terminal": {
+        "shell": {
+            "program": "fish"
+        }
+    },
+    "telemetry": {
+        "metrics": false,
+        "diagnostics": false
+    },
+    "auto_update": false
+}

@@ -1,0 +1,40 @@
+$background: #000000;
+$foreground: #ffffff;
+
+* {
+    all: unset;
+    border-radius: 10px;
+    font-family: monospace;
+    color: $foreground;
+}
+
+tooltip {
+    background-color: rgba($background, 0.3);
+}
+
+.circular-bar {
+    background-color: rgba($foreground, 0.15);
+}
+
+.battery-charging {
+    color: $foreground;
+    background-color: rgba($foreground, 0.15);
+
+    label {
+        color: $foreground;
+    }
+}
+
+.battery-low {
+    color: $foreground;
+    background-color: rgba($foreground, 0.15);
+
+    label {
+        color: $foreground;
+    }
+}
+
+.bar {
+    background-color: rgba($background, 0.3);
+    padding: 0.4em;
+}

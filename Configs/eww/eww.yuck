@@ -1,0 +1,42 @@
+(include "./bar/left.yuck")
+(include "./bar/center.yuck")
+(include "./bar/right.yuck")
+
+(defwindow bar-one
+    :monitor 0
+    :stacking "fg"
+    :exclusive true
+    :namespace "eww"
+    :class "bar"
+    :geometry (geometry
+        :y "10px"
+        :width "99.3%"
+        :height "5%"
+        :anchor "bottom center"
+    )
+    (box
+        :class "bar"
+        (left)
+        (center)
+        (right)
+    )
+)
+
+(defwindow bar-two
+    :monitor 1
+    :stacking "fg"
+    :exclusive true
+    :namespace "eww"
+    :geometry (geometry
+        :y "10px"
+        :width "99.1%"
+        :height "5%"
+        :anchor "bottom center"
+    )
+    (box
+        :class "bar"
+        (left)
+        (center)
+        (right)
+    )
+)

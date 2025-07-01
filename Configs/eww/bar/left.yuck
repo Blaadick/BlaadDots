@@ -1,0 +1,36 @@
+(defpoll brightness :interval "1s" "echo $(( $(brightnessctl get) * 100 / $(brightnessctl max) ))")
+
+(defwidget brightness []
+    (circular-progress
+        :value brightness
+        :class "circular-bar"
+        :thickness 4
+        :tooltip "Brightness: ${brightness}%"
+        :visible { brightness == 0 ? false : true }
+        :width 48
+        "${brightness}"
+    )
+)
+
+(defwidget battery []
+    (circular-progress
+        :value {EWW_BATTERY.BAT0.capacity}
+        :class {
+              EWW_BATTERY.BAT0.status == "Charging" ? "battery-charging" 
+            : EWW_BATTERY.BAT0.capacity <= 20 ? "battery-low" 
+            : "circular-bar"
+        }
+        :thickness 4
+        :tooltip "Charge: ${EWW_BATTERY.BAT0.capacity}% [${EWW_BATTERY.BAT0.status}]"
+        :visible { EWW_BATTERY == "" ? false : true }
+        "${EWW_BATTERY.BAT0.capacity}"
+    )
+)
+
+(defwidget left []
+    (box
+        :halign "start"
+        (brightness)
+        (battery)
+    )
+)
