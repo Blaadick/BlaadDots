@@ -1,7 +1,7 @@
 cd ~/Documents/BlaadDots
 
 rm -rf ./Configs/*
-rm -rf ./Icons/*
+# rm -rf ./Icons/*
 rm -rf ./Scripts/*
 
 mkdir ./Configs/vesktop/
@@ -18,7 +18,7 @@ cp -a ~/.config/fish/config.fish ./Configs/fish/
 cp -a ~/.config/fontconfig/ ./Configs/
 cp -a ~/.config/zed/settings.json ./Configs/zed/
 cp -a ~/.config/blaadpapers/ ./Configs/
-cp -a ~/.icons/* ./Icons/
+# cp -a ~/.icons/* ./Icons/
 cp -a ~/Scripts/* ./Scripts/
 
 sudo cp /etc/pacman.conf ./ConfigsOther/pacman.conf
