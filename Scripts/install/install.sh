@@ -21,7 +21,6 @@ main_packages=(
     eww
     quickshell
     hyprshell
-    matugen-bin
 )
 
 install_pkgs() {
@@ -63,16 +62,19 @@ setup_themes() {
 }
 
 setup_dotfiles() {
-    cd ~/Documents/DotFiles
+    cd ~/Documents/BlaadDots
+
+    mkdir -p ~/.icons
+    mkdir -p ~/Scripts
+
     cp -af Configs/* ~/.config
-    mkdir ~/.icons
     cp -af Icons/* ~/.icons
     cp -af Pictures/* ~/Pictures
-    mkdir ~/Scripts
     cp -af Scripts/* ~/Scripts
 }
 
 setup_yay
 install_pkgs "${main_packages[@]}"
+setup_dotfiles
 setup_omf
 setup_themes
