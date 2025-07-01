@@ -41,7 +41,7 @@ flatpak_packages=(
 )
 
 install_pkgs "${arch_packages[@]}"
-yay -Rnsu "$(yay -Qqtd)" --noconfirm
+yay -Rnsu $(yay -Qqtd) --noconfirm
 yay -Rns dolphin vim htop --noconfirm
 
 flatpak install "${flatpak_packages[@]}"
