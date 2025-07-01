@@ -26,7 +26,7 @@ sudo cp /etc/pacman.conf ./ConfigsOther/pacman.conf
 rm ./Configs/hypr/hyprpaper.conf # Because blaadpapers generates them
 
 if [[ -n $1 ]]; then
-    git add *
+    git add .
     git commit -m "$1"
     git push
 fi
