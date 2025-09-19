@@ -23,8 +23,8 @@ arch_packages=(
     jdk8-openjdk
     jdk17-openjdk
     jdk21-openjdk
-    openal
-    flite
+    openal                         # Minecraft forge sound fix
+    flite                          # Minecraft narrator warning fix
 
     zen-browser-bin
     youtube-music
@@ -32,7 +32,9 @@ arch_packages=(
     aseprite
     jetbrains-toolbox
     zerotier-one
-    mkinitcpio-firmware
+    v4l2loopback-dkms               # OBS virtual webcam fix
+    v4l2loopback-utils              # OBS virtual webcam fix
+    mkinitcpio-firmware             # Pacman full update warnings fix
 )
 flatpak_packages=(
     com.obsproject.Studio
@@ -40,8 +42,15 @@ flatpak_packages=(
     net.blockbench.Blockbench
 )
 
+install_gamemode() {
+    install_pkgs gamemode lib32-gamemode
+    sudo usermod -aG gamemode $(whoami)
+}
+
 install_pkgs "${arch_packages[@]}"
 yay -Rnsu $(yay -Qqtd) --noconfirm
 yay -Rns dolphin vim htop --noconfirm
 
 flatpak install "${flatpak_packages[@]}"
+
+install_gamemode

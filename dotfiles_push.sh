@@ -3,16 +3,14 @@ cd ~/Documents/BlaadDots
 rm -rf ./Configs/*
 rm -rf ./Scripts/*
 
-mkdir ./Configs/vesktop/
 mkdir ./Configs/fish/
 mkdir ./Configs/zed/
 
-cp -a ~/.config/eww/ ./Configs/
+cp -a ~/.config/quickshell/ ./Configs/
 cp -a ~/.config/fastfetch/ ./Configs/
 cp -a ~/.config/hypr/ ./Configs/
 cp -a ~/.config/kitty/ ./Configs/
 cp -a ~/.config/nvim/ ./Configs/
-cp -a ~/.config/vesktop/settings ./Configs/vesktop/settings/
 cp -a ~/.config/fish/config.fish ./Configs/fish/
 cp -a ~/.config/fontconfig/ ./Configs/
 cp -a ~/.config/zed/settings.json ./Configs/zed/

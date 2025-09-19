@@ -1,8 +1,0 @@
-(deflisten media :initial "" "playerctl -F metadata -f '{{ artist }} - {{ title }}' || true")
-
-(defwidget center []
-    (box
-        :halign "center"
-        "${media}"
-    )
-)
