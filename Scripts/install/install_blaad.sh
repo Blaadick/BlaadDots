@@ -1,3 +1,5 @@
+#!/bin/bash
+
 source ~/Documents/DotFiles/Scripts/install/install.sh
 
 arch_packages=(
@@ -7,16 +9,12 @@ arch_packages=(
     qbittorrent
     prismlauncher
     nautilus
-    loupe
-    blueman
+    qview
     neovim
+    zerotier-one
     btop
-    fish
     fastfetch
-    github-cli
     flatpak
-    7zip
-    xdg-desktop-portal-hyprland
     cups
     cups-pdf
     gutenprint
@@ -24,14 +22,13 @@ arch_packages=(
     jdk17-openjdk
     jdk21-openjdk
     openal                         # Minecraft forge sound fix
-    flite                          # Minecraft narrator warning fix
+    flite                          # Minecraft narrator fix
 
     zen-browser-bin
-    youtube-music
+    youtube-music-bin
     vesktop
     aseprite
     jetbrains-toolbox
-    zerotier-one
     v4l2loopback-dkms               # OBS virtual webcam fix
     v4l2loopback-utils              # OBS virtual webcam fix
     mkinitcpio-firmware             # Pacman full update warnings fix

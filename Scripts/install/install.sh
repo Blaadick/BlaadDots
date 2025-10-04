@@ -1,14 +1,13 @@
+#!/bin/bash
+
 main_packages=(
     hyprlock
-    hypridle
     hyprpicker
     qt6ct
     kvantum
     nwg-look
     fish
     wl-clipboard
-    grim
-    slurp
     brightnessctl
     playerctl
     ttf-jetbrains-mono
@@ -18,7 +17,6 @@ main_packages=(
     noto-fonts-extra
 
     blaadpapers
-    eww
     quickshell
     hyprshell
 )

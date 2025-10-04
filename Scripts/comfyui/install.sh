@@ -1,3 +1,5 @@
+#!/bin/bash
+
 yay -S sentencepiece
 
 git clone https://github.com/comfyanonymous/ComfyUI

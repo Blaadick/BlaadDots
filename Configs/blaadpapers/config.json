@@ -4,5 +4,6 @@
         "Questionable",
         "Explicit"
     ],
-    "working_path": "/home/blaadick/Pictures/Wallpapers/"
+    "style": "BlaadPapers",
+    "wallpapers_path": "/home/blaadick/Pictures/Wallpapers/"
 }
