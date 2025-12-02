@@ -1,6 +1,6 @@
 #!/bin/bash
 
-yay -Syu --noconfirm --answerclean A --answerdiff N --removemake
+yay -Syu --noconfirm --removemake
 yay -Rnsu $(yay -Qqtd) --noconfirm
 
 flatpak update

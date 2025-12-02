@@ -17,12 +17,13 @@ main_packages=(
     noto-fonts-extra
 
     blaadpapers
+    hyprpaper
     quickshell
     hyprshell
 )
 
 install_pkgs() {
-    yay -S "$@" --noconfirm --answerclean A --answerdiff N --removemake
+    yay -S "$@" --noconfirm --removemake
 }
 
 setup_yay() {
@@ -76,3 +77,5 @@ install_pkgs "${main_packages[@]}"
 setup_dotfiles
 setup_omf
 setup_themes
+
+echo "Dotfiles installation done."

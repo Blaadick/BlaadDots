@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ~/Documents/DotFiles/Scripts/install/install.sh
+source ~/Documents/BlaadDots/Scripts/install/install.sh
 
 arch_packages=(
     zed
@@ -10,11 +10,19 @@ arch_packages=(
     prismlauncher
     nautilus
     qview
-    neovim
+    haruna
+    amberol
+    scrcpy
     zerotier-one
+    neovim
     btop
     fastfetch
     flatpak
+    wine
+    wine-mono
+    wine-gecko
+    winetricks
+    yt-dlp
     cups
     cups-pdf
     gutenprint
@@ -25,18 +33,20 @@ arch_packages=(
     flite                          # Minecraft narrator fix
 
     zen-browser-bin
-    youtube-music-bin
+    pear-desktop-bin
     vesktop
     aseprite
+    blockbench-bin
     jetbrains-toolbox
+    bottles
+    proton-ge-custom-bin
+    protondb-cli
     v4l2loopback-dkms               # OBS virtual webcam fix
     v4l2loopback-utils              # OBS virtual webcam fix
     mkinitcpio-firmware             # Pacman full update warnings fix
 )
 flatpak_packages=(
     com.obsproject.Studio
-    com.usebottles.bottles
-    net.blockbench.Blockbench
 )
 
 install_gamemode() {
@@ -47,7 +57,8 @@ install_gamemode() {
 install_pkgs "${arch_packages[@]}"
 yay -Rnsu $(yay -Qqtd) --noconfirm
 yay -Rns dolphin vim htop --noconfirm
-
 flatpak install "${flatpak_packages[@]}"
 
 install_gamemode
+
+echo "Bladick's dotfiles installation done."

@@ -4,6 +4,6 @@
         "Questionable",
         "Explicit"
     ],
-    "style": "BlaadPapers",
+    "status_bar_visible": false,
     "wallpapers_path": "/home/blaadick/Pictures/Wallpapers/"
 }
