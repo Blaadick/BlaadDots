@@ -4,6 +4,11 @@ copy_blaadpapers_conf() {
     cp -a ~/.config/blaadpapers/ ./Configs/
 }
 
+copy_copyq_conf() {
+    mkdir ./Configs/copyq
+    cp -a ~/.config/copyq/copyq.conf ./Configs/copyq/
+}
+
 copy_fastfetch_conf() {
     cp -a ~/.config/fastfetch/ ./Configs/
 }
@@ -49,6 +54,7 @@ copy_zed_conf() {
 
 rm -rf ./Configs/*
 copy_blaadpapers_conf
+copy_copyq_conf
 copy_fastfetch_conf
 copy_fish_conf
 copy_fontconfig_conf

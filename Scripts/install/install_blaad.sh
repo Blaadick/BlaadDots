@@ -1,23 +1,23 @@
 #!/bin/bash
 
-source ~/Documents/BlaadDots/Scripts/install/install.sh
+source ~/Scripts/install/install.sh
 
 arch_packages=(
+    intellij-idea-community-edition
     zed
+    nautilus
     steam
     obsidian
-    qbittorrent
     prismlauncher
-    nautilus
     qview
     haruna
     amberol
+    qbittorrent
     scrcpy
     zerotier-one
     neovim
     btop
     fastfetch
-    flatpak
     wine
     wine-mono
     wine-gecko
@@ -29,24 +29,21 @@ arch_packages=(
     jdk8-openjdk
     jdk17-openjdk
     jdk21-openjdk
+    jdk-openjdk
     openal                         # Minecraft forge sound fix
     flite                          # Minecraft narrator fix
 
     zen-browser-bin
+    clion
+    clion-jre
     pear-desktop-bin
-    vesktop
-    aseprite
+    vesktop-bin
+    aseprite-bin
     blockbench-bin
-    jetbrains-toolbox
     bottles
+    coppwr-bin
     proton-ge-custom-bin
-    protondb-cli
-    v4l2loopback-dkms               # OBS virtual webcam fix
-    v4l2loopback-utils              # OBS virtual webcam fix
     mkinitcpio-firmware             # Pacman full update warnings fix
-)
-flatpak_packages=(
-    com.obsproject.Studio
 )
 
 install_gamemode() {
@@ -54,11 +51,36 @@ install_gamemode() {
     sudo usermod -aG gamemode $(whoami)
 }
 
+set_mime() {
+    local file_manadger_app="com.interversehq.qView.desktop"
+    local text_editor_app="dev.zed.Zed.desktop"
+    local picture_app="com.interversehq.qView.desktop"
+    local video_app="org.kde.haruna.desktop"
+    local audio_app="io.bassi.Amberol.desktop"
+
+    xdg-mime default $file_manadger_app inode/directory
+
+    xdg-mime default $picture_app image/png
+    xdg-mime default $picture_app image/webp
+    xdg-mime default $picture_app image/jpeg
+    xdg-mime default $picture_app image/svg+xml
+
+    xdg-mime default $video_app video/mp4
+    xdg-mime default $video_app video/mpeg
+    xdg-mime default $video_app video/x-matroska
+
+    xdg-mime default $audio_app audio/flac
+    xdg-mime default $audio_app audio/mpeg
+    xdg-mime default $audio_app audio/ogg
+    xdg-mime default $audio_app audio/webm
+    xdg-mime default $audio_app audio/x-flac+ogg
+}
+
 install_pkgs "${arch_packages[@]}"
-yay -Rnsu $(yay -Qqtd) --noconfirm
 yay -Rns dolphin vim htop --noconfirm
-flatpak install "${flatpak_packages[@]}"
+yay -Rnsu $(yay -Qqtd) --noconfirm
 
 install_gamemode
+set_mime
 
 echo "Bladick's dotfiles installation done."

@@ -8,6 +8,8 @@ main_packages=(
     nwg-look
     fish
     wl-clipboard
+    wl-clip-persist
+    copyq
     brightnessctl
     playerctl
     ttf-jetbrains-mono
@@ -17,13 +19,12 @@ main_packages=(
     noto-fonts-extra
 
     blaadpapers
-    hyprpaper
     quickshell
-    hyprshell
+    hyprshell-bin
 )
 
 install_pkgs() {
-    yay -S "$@" --noconfirm --removemake
+    yay -S "$@" --noconfirm --removemake --needed
 }
 
 setup_yay() {
@@ -43,7 +44,9 @@ setup_omf() {
 }
 
 setup_themes() {
-    install_pkgs papirus-icon-theme
+    install_pkgs papirus-icon-theme posy-cursors
+
+    hyprctl setcursor posy-black-tiny 24
 
     cd ~
 
@@ -75,7 +78,7 @@ setup_dotfiles() {
 setup_yay
 install_pkgs "${main_packages[@]}"
 setup_dotfiles
-setup_omf
+# setup_omf
 setup_themes
 
 echo "Dotfiles installation done."
