@@ -20,7 +20,6 @@ main_packages=(
 
     blaadpapers
     quickshell
-    hyprshell-bin
 )
 
 install_pkgs() {
@@ -45,7 +44,6 @@ setup_omf() {
 
 setup_themes() {
     install_pkgs papirus-icon-theme posy-cursors
-
     hyprctl setcursor posy-black-tiny 24
 
     cd ~

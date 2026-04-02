@@ -2,10 +2,10 @@
 
 yay -Syu --noconfirm --removemake
 
-echo -e "\n\e[34m::\e[0m Searching for orphan packages..."
+echo -e "\e[34m::\e[0m Searching for orphan packages..."
 orphan=$(yay -Qqtd)
-if [[ "$orphan" == '\n' ]]; then
-    yay -Rnsu "$orphan" --noconfirm
+if [[ -n $orphan ]]; then
+    yay -Rns $orphan --noconfirm
 else
     echo " there is nothing to do"
 fi

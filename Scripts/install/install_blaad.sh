@@ -3,19 +3,23 @@
 source ~/Scripts/install/install.sh
 
 arch_packages=(
-    intellij-idea-community-edition
-    zed
-    nautilus
-    steam
-    obsidian
-    prismlauncher
+    thunar
     qview
     haruna
     amberol
+    steam
+    discord
+    obsidian
+    intellij-idea-community-edition
+    zed
+    neovim
+    prismlauncher
     qbittorrent
+    obs-studio
+    songrec
+    bitwarden
     scrcpy
     zerotier-one
-    neovim
     btop
     fastfetch
     wine
@@ -23,13 +27,12 @@ arch_packages=(
     wine-gecko
     winetricks
     yt-dlp
-    cups
-    cups-pdf
-    gutenprint
+    xpadneo-dkms                   # Gemepads support
+    dualsensectl                   # DualSense settings
     jdk8-openjdk
     jdk17-openjdk
     jdk21-openjdk
-    jdk-openjdk
+    jdk25-openjdk
     openal                         # Minecraft forge sound fix
     flite                          # Minecraft narrator fix
 
@@ -37,12 +40,14 @@ arch_packages=(
     clion
     clion-jre
     pear-desktop-bin
-    vesktop-bin
     aseprite-bin
     blockbench-bin
+    reaper
     bottles
-    coppwr-bin
-    proton-ge-custom-bin
+    protonplus
+    thunar-archive-plugin
+    ark                             # Thunar archives manager
+    tumbler                         # Thunar thubnail generator
     mkinitcpio-firmware             # Pacman full update warnings fix
 )
 
@@ -52,7 +57,7 @@ install_gamemode() {
 }
 
 set_mime() {
-    local file_manadger_app="com.interversehq.qView.desktop"
+    local file_manadger_app="org.gnome.Nautilus.desktop"
     local text_editor_app="dev.zed.Zed.desktop"
     local picture_app="com.interversehq.qView.desktop"
     local video_app="org.kde.haruna.desktop"

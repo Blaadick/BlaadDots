@@ -1,42 +1,89 @@
 {
-    "agent": {
-        "model_parameters": [],
-        "dock": "right"
+    "format_on_save": "off",
+    "git": {
+        "inline_blame": {
+            "enabled": false
+        }
     },
-    "ui_font_size": 16,
-    "buffer_font_size": 13,
-    "buffer_font_family": "monospace",
-    "ui_font_family": "monospace",
+    "tab_size": 4,
+    "auto_update": false,
+    "session": {
+        "trust_all_worktrees": true
+    },
+    "ui_font_family": "JetBrains Mono",
+    "ui_font_size": 15.0,
+    "buffer_font_size": 13.0,
+    "buffer_font_family": "JetBrains Mono",
+    "icon_theme": {
+        "mode": "system",
+        "light": "JetBrains Icons Light",
+        "dark": "JetBrains Icons Dark"
+    },
     "theme": {
-        "mode": "dark",
-        "light": "One Light",
+        "mode": "system",
+        "light": "JetBrains Light",
         "dark": "JetBrains Dark"
     },
-    "icon_theme": "JetBrains New UI Icons (Dark)",
-    "base_keymap": "JetBrains",
+    "autosave": "on_focus_change",
+    "terminal": {
+        "blinking": "on",
+        "cursor_shape": "bar",
+        "font_family": "JetBrains Mono"
+    },
+    "preview_tabs": {
+        "enabled": false
+    },
+    "tab_bar": {
+        "show_tab_bar_buttons": false,
+        "show_nav_history_buttons": false
+    },
+    "tabs": {
+        "git_status": true
+    },
+    "title_bar": {
+        "show_user_picture": false,
+        "show_user_menu": false,
+        "show_sign_in": false,
+        "show_onboarding_banner": false
+    },
+    "search": {
+        "button": false
+    },
+    "diagnostics": {
+        "button": false
+    },
+    "status_bar": {
+        "cursor_position_button": false,
+        "active_language_button": false
+    },
+    "outline_panel": {
+        "button": false
+    },
+    "project_panel": {
+        "auto_open": {
+            "on_drop": false,
+            "on_paste": false
+        },
+        "hide_root": true
+    },
+    "disable_ai": true,
     "collaboration_panel": {
         "button": false
     },
-    "features": {
-        "edit_prediction_provider": "copilot"
+    "notification_panel": {
+        "button": false
     },
-    "autosave": "on_focus_change",
-    "format_on_save": "off",
-    "tab_size": 4,
-    "prettier": {
-        "allowed": true,
-        "tabWidth": 4,
-        "bracketSpacing": true,
-        "singleQuote": false
-    },
-    "terminal": {
-        "shell": {
-            "program": "fish"
+    "lsp": {
+        "kotlin-lsp": {
+            "binary": {
+                "path": "/usr/bin/kotlin-lsp",
+                "arguments": ["--stdio"]
+            }
+        },
+        "jdtls": {
+            "binary": {
+                "path": "/usr/bin/jdtls"
+            }
         }
-    },
-    "telemetry": {
-        "metrics": false,
-        "diagnostics": false
-    },
-    "auto_update": false
+    }
 }

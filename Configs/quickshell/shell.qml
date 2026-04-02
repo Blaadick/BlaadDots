@@ -44,7 +44,7 @@ ShellRoot {
                         let left = 10;
                         let right = 10;
                         let bottom = 10;
-                        let col = Qt.rgba(0, 0, 0, 0.3);
+                        let col = Qt.rgba(0, 0, 0, 0.4);
 
                         // Сначала рисуем внешнюю заливку рамки
                         ctx.fillStyle = col;
