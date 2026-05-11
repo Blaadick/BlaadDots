@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 packages=(
     android-ndk

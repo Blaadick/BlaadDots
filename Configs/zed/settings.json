@@ -1,4 +1,12 @@
 {
+    "agent": {
+        "dock": "right",
+        "favorite_models": [],
+        "model_parameters": []
+    },
+    "git_panel": {
+        "dock": "left"
+    },
     "format_on_save": "off",
     "git": {
         "inline_blame": {
@@ -54,12 +62,14 @@
     },
     "status_bar": {
         "cursor_position_button": false,
-        "active_language_button": false
+        "active_language_button": true
     },
     "outline_panel": {
+        "dock": "left",
         "button": false
     },
     "project_panel": {
+        "dock": "left",
         "auto_open": {
             "on_drop": false,
             "on_paste": false
@@ -68,6 +78,7 @@
     },
     "disable_ai": true,
     "collaboration_panel": {
+        "dock": "left",
         "button": false
     },
     "notification_panel": {

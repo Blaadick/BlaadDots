@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 if [[ -z "$1" ]]; then
     echo "Post link or id not provided"

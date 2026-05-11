@@ -5,5 +5,7 @@
         "Explicit"
     ],
     "status_bar_visible": false,
-    "wallpapers_path": "/home/blaadick/Pictures/Wallpapers/"
+    "wallpaper_paths": [
+        "/home/blaadick/Documents/Wallpapers"
+    ]
 }

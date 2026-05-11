@@ -1,8 +1,6 @@
-#!/bin/bash
+#!/usr/bin/bash
 
-packages=(
-
-)
+packages=()
 
 install_pkgs() {
     yay -S "$@" --noconfirm --removemake --needed

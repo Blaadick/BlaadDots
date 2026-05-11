@@ -1,6 +1,5 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 cd ~/ComfyUI
 source .venv/bin/activate
-# python main.py --enable-manager --auto-launch
-python main.py
+python main.py --enable-manager --auto-launch

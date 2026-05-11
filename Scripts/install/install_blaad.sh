@@ -1,9 +1,9 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 source ~/Scripts/install/install.sh
 
 arch_packages=(
-    thunar
+    nautilus
     qview
     haruna
     amberol
@@ -35,6 +35,7 @@ arch_packages=(
     jdk25-openjdk
     openal                         # Minecraft forge sound fix
     flite                          # Minecraft narrator fix
+    ffmpegthumbnailer
 
     zen-browser-bin
     clion
@@ -45,9 +46,7 @@ arch_packages=(
     reaper
     bottles
     protonplus
-    thunar-archive-plugin
-    ark                             # Thunar archives manager
-    tumbler                         # Thunar thubnail generator
+    ffmpeg-audio-thumbnailer
     mkinitcpio-firmware             # Pacman full update warnings fix
 )
 
